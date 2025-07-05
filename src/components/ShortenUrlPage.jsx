@@ -8,7 +8,9 @@ const ShortenUrlPage = () => {
             window.location.href = import.meta.env.VITE_BACKEND_URL+ `/${url}`;
         }
     },[url])
-    return null;
+    return <>
+        Redirecting...
+    </>;
 }
 
 export default ShortenUrlPage
