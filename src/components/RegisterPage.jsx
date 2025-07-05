@@ -46,12 +46,12 @@ const RegisterPage = () => {
         className='min-h-[calc(100vh-64px)] flex justify-center items-center'
     >
         <form onSubmit={handleSubmit(registerHandler)}
-        className="sm:w-[450px] w-[360px]  shadow-2xl py-8 sm:px-8 px-4 rounded-md">
-            <h1 className="text-center font-serif text-btnColor font-bold lg:text-3xl text-2xl">
+        className="sm:w-[450px] w-[360px] bg-dark shadow-2xl py-8 sm:px-8 px-4 rounded-2xl">
+            <h1 className="text-center font-heading text-blue font-serif text-btnColor font-bold lg:text-3xl text-2xl">
                 Register Here
             </h1>
 
-            <hr className='mt-2 mb-5 text-black'/>
+            <hr className='mt-2 mb-5 text-white'/>
 
             <div className="flex flex-col gap-3">
                 <TextField
@@ -92,15 +92,15 @@ const RegisterPage = () => {
             <button 
                 disabled = {loader}
                 type='submit'
-                className="bg-gradient-to-r from-blue-300 to-blue-500 text-slate-900 font-semibold w-full py-3 rounded-md my-4 hover:from-blue-400 hover:to-blue-600 hover:text-white hover:cursor-pointer transition-all duration-300 shadow-sm"
+                className="font-text font-bold text-white w-full mt-12 py-3 rounded-md my-4 hover:from-blue-400 hover:to-blue-600 hover:text-white hover:cursor-pointer transition-all duration-300 shadow-sm"
             >
                 {loader ? "Loading..." : "Register"}
             </button>
 
-            <p className='text-center text-slate-700 text-sm mt-6'>
+            <p className='font-text text-center text-white text-sm mt-6'>
                 Already have an account?  
                 <Link to="/login">
-                    <span className='text-blue-500 font-semibold ml-1 cursor-pointer hover:underline'>
+                    <span className='font-text text-blue font-semibold ml-1 cursor-pointer hover:underline'>
                         Login
                     </span>
                 </Link>

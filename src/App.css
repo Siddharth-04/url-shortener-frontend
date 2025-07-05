@@ -97,6 +97,10 @@ button:hover {
   color: #212121;
 }
 
+.bg-dark {
+  background: #212121;
+}
+
 .bg-blue {
   background: #0b91f8;
 }
