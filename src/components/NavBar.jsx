@@ -16,10 +16,10 @@ const Navbar = () => {
   }
 
   return (
-    <div className="h-16 bg-blue-400 z-50 flex items-center sticky top-0">
+    <div className="h-16 bg-blue border-radius-bottom z-50 flex items-center sticky top-0">
       <div className="lg:px-14 sm:px-8 px-4 w-full flex justify-between items-center">
         <Link to="/">
-          <h1 className="font-bold text-3xl text-white italic sm:mt-0 mt-2">
+          <h1 className="font-heading text-3xl text-dark sm:mt-0 mt-2">
             URLShortener
           </h1>
         </Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
           <li className="hover:text-blue font-[500] transition-all duration-150">
             <Link
               className={`${
-                path === "/" ? "text-blue-600 font-semibold" : "text-gray-700"
+                path === "/" ? "text-dark font-text text-blue-600 font-semibold" : "text-gray-700"
               }`}
               to="/"
             >
@@ -40,7 +40,7 @@ const Navbar = () => {
             </Link>
           </li>
 
-          <li className="hover:text-blue-400 font-[500] transition-all duration-150">
+          <li className="text-dark font-text hover:text-blue-400 font-[500] transition-all duration-150">
             <Link
               className={`${
                 path === "/about" ? "text-blue-600 font-semibold" : "text-gray-700"
@@ -66,8 +66,8 @@ const Navbar = () => {
           )}
           {!token && (
             <Link to="/register">
-            <li className="sm:ml-0 -ml-1 bg-rose-700 text-white cursor-pointer w-24 text-center font-semibold px-2 py-2 rounded-md hover:text-slate-300 transition-all duration-150">
-              SignUp
+            <li className="font-text text-dark sm:ml-0 -ml-1 text-white cursor-pointer w-24 text-center font-semibold px-2 py-2 rounded-md hover:text-slate-300 transition-all duration-150">
+              Sign Up
             </li>
           </Link>
           )}

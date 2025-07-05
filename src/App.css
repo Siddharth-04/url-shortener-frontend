@@ -40,3 +40,71 @@
 .read-the-docs {
   color: #888;
 } */
+.font-title {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-heading {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f1f1f1;
+}
+
+.font-text {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+}
+
+body {
+  background: #212121;
+  background: linear-gradient(90deg,rgba(33, 33, 33, 1) 0%, rgba(20, 20, 20, 1) 50%, rgba(3, 3, 1, 1) 100%);
+}
+
+button {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+  background: #212121;
+  border: 2px solid #24a0fe;
+  border-radius: 8px;
+}
+
+button:hover {
+  background: #24a0fe;
+  color: #212121;
+}
+
+.card {
+  border-radius: 16px;
+  border-width: 2px 6px 6px 2px;
+  border-color: #c3c3c3;
+  border-style: solid;
+}
+
+.text-gray {
+  color: #c3c3c3;
+}
+
+.text-blue {
+  color: #24a0fe;
+}
+
+.text-dark {
+  color: #212121;
+}
+
+.bg-blue {
+  background: #0b91f8;
+}
+
+.border-radius-bottom {
+  border-radius: 0 0 0 300px;
+}
+
+.border-radius-top {
+  border-radius: 0 300px 0 0;
+}
